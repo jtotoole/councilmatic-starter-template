@@ -41,6 +41,9 @@ INSTALLED_APPS = (
     'haystack',
     'pittsburgh',
     'councilmatic_core',
+    'notifications',
+    'password_reset',
+    'adv_cache_tag',
 )
 
 try:

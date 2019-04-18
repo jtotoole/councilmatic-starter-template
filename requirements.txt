@@ -1,2 +1,11 @@
-psycopg2==2.7.7
-django-councilmatic<0.7
+psycopg2==2.7.6.1
+django-councilmatic==0.10.13
+django-councilmatic-notifications
+raven==5.30.0
+google-api-python-client==1.6.4
+icalendar==4.0.0
+gunicorn==19.6.0
+pytest==3.2.5
+pytest-django==3.1.2
+pytest-mock==1.6.3
+lxml==4.3.0

@@ -5,7 +5,7 @@
 ###############################
 
 OCD_JURISDICTION_ID = 'ocd-jurisdiction/country:us/state:pa/place:pittsburgh'
-# OCD_CITY_COUNCIL_ID = 'ocd-organization/ef168607-9135-4177-ad8e-c1f7a4806c3a' -- no ID for Pittsburgh at present (2/14/19)
+OCD_CITY_COUNCIL_ID = 'ocd-organization/foo' # -- no ID for Pittsburgh at present (2/14/19)
 OCD_CITY_COUNCIL_NAME = 'Pittsburgh City Council'
 CITY_COUNCIL_NAME = 'Pittsburgh City Council'
 LEGISLATIVE_SESSIONS = ['2019'] # the last one in this list should be the current legislative session
@@ -32,10 +32,10 @@ APP_NAME = 'pittsburgh'
 SITE_META = {
     'site_name' : 'Pittsburgh Councilmatic',       # e.g. 'Pittsburgh Councilmatc'
     'site_desc' : 'City Council, demystified. Keep tabs on Pittsburgh legislation, votes, & hearings.',       # e.g. 'City Council, demystified. Keep tabs on Pittsburgh legislation, aldermen, & meetings.'
-    'site_author' : 'Pittsburgh Digital Services Studio',     # e.g. 'DataMade'
+    'site_author' : 'City of Pittsburgh',     # e.g. 'DataMade'
     'site_url' : '',        # TODO--e.g. 'https://chicago.councilmatic.org'
-    'twitter_site': '@PghDigitalStudio',     # e.g. '@DataMadeCo'
-    'twitter_creator': '@PghDigitalStudio',  # e.g. '@DataMadeCo'
+    'twitter_site': '@PghIP',     # e.g. '@DataMadeCo'
+    'twitter_creator': '@PghIP',  # e.g. '@DataMadeCo'
 }
 
 LEGISTAR_URL = 'https://pittsburgh.legistar.com/Legislation.aspx' # e.g. 'https://chicago.legistar.com/Legislation.aspx'
@@ -74,7 +74,7 @@ SEARCH_PLACEHOLDER_TEXT = 'Search council' # e.g. 'police, zoning, O2015-7825, e
 # these should live in APP_NAME/static/
 IMAGES = {
     'favicon': 'images/favicon.ico',
-    'logo': 'images/2000px-Flag_of_Pittsburgh,_Pennsylvania.svg.png',
+    'logo': 'images/website_logo.png',
 }
 
 

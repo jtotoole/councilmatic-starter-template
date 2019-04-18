@@ -1,2 +1,305 @@
 /* city-specific css lives here */
 /* anything in this file will override custom.css in django-councilmatic */
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .navbar {
+    font-family: 'ff-din-web', Arial, sans-serif;
+    background-color: #212121;
+}
+
+h1, .h1 {
+    font-size: 36px;
+}
+
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.padding-sm {
+    margin-bottom: 2em;
+}
+
+.navbar-brand {
+    min-width: 160px;
+}
+
+.navbar {
+    font-size: 16px;
+    color: #fdb81e;
+}
+
+.nav>li>a {
+  padding: 19.5px 10px;
+  color: #fdb81e;
+}
+
+.site-intro-search { margin-bottom: 1em; }
+
+#section-photo {
+    background-image:
+        linear-gradient(
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0)
+        ),
+        url('../images/incline_website_footer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 380px;
+}
+
+#section-intro {
+    line-height: 1.6em;
+    padding-top: 1.6em;
+}
+
+#section-events {
+    background-color: #F8F8F8;
+    padding-bottom: 20px;
+}
+
+#map { margin-bottom: 2em; }
+
+#map-screenshot { width: 90%; }
+
+.map-heading {
+    display: inline-block;
+    padding-right: 12px;
+}
+
+.map-info {
+    display: inline-block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+
+.map-info:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.map-info:focus {
+    text-decoration: none;
+    border: none;
+    outline:none;
+}
+
+.panel-body {
+    padding: 28px;
+    padding-top: 0px;
+}
+
+div#collapseURL .panel-body, div#collapsePDF .panel-body {
+    padding-top: 28px;
+}
+
+.infobox {
+    width: 22px;
+    margin: 0;
+}
+
+.popover {
+    max-width: 60%;
+    top: 1% !important;
+}
+
+.popover.right {
+    margin-right: 1%;
+}
+
+.leaflet-control-attribution { display: none; }
+
+.info-blurb ol {
+    font-size: .85em;
+}
+
+div#google_translate_element {
+    padding-top: 14px;
+    padding-left: 6px;
+    padding-right: 6px;
+    min-width: 185px;
+}
+
+.pdf-viewer { max-width: 840px; }
+
+.archive-link {
+    font-weight: 700;
+    font-size: 115%;
+}
+
+.login { margin-top: 2em; }
+
+#ceo-table { border-top: 2px solid #dddddd; }
+
+#ceo-table td { vertical-align: middle; }
+
+/* Labels for statues */
+.label {
+    padding: .25em .6em .25em;
+}
+
+.label-teal { background-color: #49A6AB; }
+
+.label-received, .label-approved, .label-adopted {
+    background-color: #1D9A43;
+}
+
+.label-active {
+    background-color: #E3D626;
+}
+
+.label-failed, .label-withdrawn {
+    background-color: #E00700;
+}
+
+/* Styles for order by options on search page */
+.nav a.sort-by, .nav a.btn { margin-left: 1.8em; }
+
+.nav-inline { margin-top: 21px; }
+
+div.order-nav { margin-top: 21px; }
+
+.btn-district {
+    background-color: #3D8A8E;
+    color: #fff;
+    padding: 4px 12px;
+}
+
+.btn-district:hover, .btn-district.active { background-color: #49A6AB; }
+
+.btn-sector {
+    background-color: #4D649E;
+    color: #fff;
+    padding: 4px 12px;
+}
+
+.btn-sector:hover, .btn-sector.active { background-color: #697EB5; }
+
+.btn-city {
+    background-color: #fdb81e;
+    color: #fff;
+    padding: 4px 12px;
+}
+
+.btn-city:hover, .btn-city.active { background-color: #EF8481; }
+
+div#toggleControls { margin-bottom: 1em; }
+
+.badge.district-badge { background-color: #3D8A8E; }
+
+.badge.sector-badge { background-color: #4D649E; }
+
+.badge.city-badge { background-color: #fdb81e; }
+
+#searchOn.well { padding: 12px; }
+
+#agendaModal div.modal-header {
+    background-color: #f5f5f5;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+/* Styles for calendar pop-up. */
+#date-search .form-control { width: 50%; }
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: #fff;
+}
+
+.datepicker table tr td span.active.active, .datepicker table tr td span.active:hover.active {background-color: #49A6AB !important;
+}
+
+.btn-teal {
+    background-color: #49A6AB;
+    border: #49A6AB;
+    color: #fff;
+}
+
+.btn-teal:hover, .btn-teal.active { background-color: #70BEC2; }
+
+.btn-salmon {
+    background-color: #EB6864;
+    border: #EB6864;
+    color: #fff;
+}
+
+.btn-salmon:hover, .btn-salmon.active { background-color: #EF8481; }
+
+#events-form > div.col-xs-8, #events-form > div.col-xs-2 { padding-right: 0; }
+
+.scrollable {
+    overflow: scroll;
+    height: 700px;
+}
+
+.skinny-list {
+    width: 90%;
+    display: inline-block;
+}
+
+/* Styles for event detail */
+#pdf-check-viewer-test {
+    margin-bottom: 14px;
+}
+
+
+/* Media queries */
+@media only screen and (max-width : 767px) {
+
+    .navbar-brand {
+        width: 50%;
+        padding-top: 19px;
+    }
+
+    .home-header {
+        font-size: 26px;
+    }
+
+    .nav a.sort-by, .nav a.btn {
+        margin-left: 0.4em;
+    }
+
+    .archive-link {
+        font-size: 14px;
+    }
+
+    .current-meeting-img {
+        max-width: 75%;
+    }
+}
+
+@media only screen and (max-width : 415px) {
+    .remove-order-value {
+        display: none;
+    }
+
+    .site-intro-search input {
+      max-height: 30px;
+      padding: 2px;
+    }
+
+    .site-intro-search .input-group-btn button {
+      max-height: 30px;
+      padding: 2px;
+    }
+    div.btn-group label.btn.btn-primary.btn-search-option.active,
+    div.btn-group label.btn.btn-primary.btn-search-option {
+      border-radius: 4px;
+      padding: 4px 8px;
+      margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1180px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}
