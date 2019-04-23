@@ -2,11 +2,22 @@
 /* anything in this file will override custom.css in django-councilmatic */
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .navbar {
     font-family: 'ff-din-web', Arial, sans-serif;
-    background-color: #212121;
+    background-color: #fdb81e;
+}
+
+a {
+    color: #212121;
+    text-decoration: underline;
 }
 
 h1, .h1 {
     font-size: 36px;
+    color: #fdb81e;
+    background: none;
+}
+
+.h3 {
+    background: none;
 }
 
 
@@ -175,8 +186,8 @@ div.order-nav { margin-top: 21px; }
 .btn-sector:hover, .btn-sector.active { background-color: #697EB5; }
 
 .btn-city {
-    background-color: #fdb81e;
-    color: #fff;
+    background-color: #fff;
+    color: #fdb81e;
     padding: 4px 12px;
 }
 
@@ -239,6 +250,11 @@ div#toggleControls { margin-bottom: 1em; }
 /* Styles for event detail */
 #pdf-check-viewer-test {
     margin-bottom: 14px;
+}
+
+.social-buttons {
+    display: inline-flex;
+    list-style-type: none;
 }
 
 
