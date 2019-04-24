@@ -1,7 +1,8 @@
 /* city-specific css lives here */
 /* anything in this file will override custom.css in django-councilmatic */
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .navbar {
-    font-family: 'ff-din-web', Arial, sans-serif;
+    font-family: 'Merriweather', serif, 'Source Sans Pro', sans-serif;
+    /*font-family: 'ff-din-web', Arial, sans-serif;*/
     background-color: #fdb81e;
 }
 
@@ -48,10 +49,10 @@ h1, .h1 {
 #section-photo {
     background-image:
         linear-gradient(
-          rgba(0, 0, 0, 0),
-          rgba(0, 0, 0, 0)
+          rgba(0, 0, 0, 0.8),
+          rgba(160, 160, 160, 0.1)
         ),
-        url('../images/incline_website_footer.jpg');
+        url('http://pittsburghpa.gov/images/home-slider/8.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
