@@ -20,15 +20,18 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.views.generic.base import RedirectView
 from haystack.query import EmptySearchQuerySet
 from councilmatic_core.views import CouncilmaticSearchForm, CouncilmaticFacetedSearchView
-from pittsburgh.views import PittsburghCouncilmaticFacetedSearchView
+from pittsburgh.views import *
+# from pittsburgh.feeds import *
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^search/', PittsburghCouncilmaticFacetedSearchView(searchqueryset=EmptySearchQuerySet,
                                        form_class=CouncilmaticSearchForm), name='search'),
-    # url(r'^search/', CouncilmaticFacetedSearchView(searchqueryset=sqs, 
+    # url(r'^search/', CouncilmaticFacetedSearchView(searchqueryset=sqs,
     #                                    form_class=CouncilmaticSearchForm)),
+    url(r'^$', PittsburghIndexView.as_view(), name='index'),
     url(r'', include('councilmatic_core.urls')),
+    # url(r'^about/$', PittsburghAboutView.as_view(), name='about')
 ]
 
 urlpatterns += staticfiles_urlpatterns()

@@ -1,5 +1,5 @@
 {% load staticfiles %}
-{% load adv_cache %}
+{# {% load adv_cache %} #}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +22,7 @@
 </head>
 <body>
 
-    {% cache 600 nav_wrapper 'nav' %}
+    {# {% cache 600 nav_wrapper 'nav' %} #}
 
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid container-fluid-nav">
@@ -48,7 +48,7 @@
                     <a href="{% url 'search' %}">Legislation</a>
                 </li>
 
-                {% nocache %}
+                {# {% nocache %} #}
 
                 {% if USING_NOTIFICATIONS and request.user.is_authenticated %}
                 <li>
@@ -85,7 +85,7 @@
                 </li>
                 {% endif %}
 
-                {% endnocache %}
+                {# {% endnocache %} #}
             </ul>
         </div>
     </nav>
@@ -104,7 +104,7 @@
         </div>
     {% endif %}
 
-    {% endcache %}
+    {# {% endcache %} #}
 
     {% block full_content %}
     {% endblock %}
@@ -116,7 +116,7 @@
                     <aside class="widget footer-widget">
                     <h4 class="widget-title">We want to hear from you</h4>
                     <p>With your insight, the Council discovers ways to improve the city we all call home. So we're meeting Pittsburghers where they are: online and in person. Keep your feedback coming!</p>
-                    <p>For issues specific to a neighborhood, it's best to contact the <a href="/districts/">Council Member</a> representing that community.</p>
+                    <p>For issues specific to a neighborhood, it's best to contact the <strong><a href="/districts/">Council Member</a></strong> representing that community.</p>
                     <ul class="menu simple social-buttons">
                         <li><a href="https://www.facebook.com/city.of.pittsburgh/"><img class="inline-icon footer-icon" src="/static/images/icons/social-icon-facebook.png"></a></li>
                         <li><a href="https://twitter.com/citypgh"><img class="inline-icon footer-icon" src='/static/images/icons/social-icon-twitter.png'></a></li>

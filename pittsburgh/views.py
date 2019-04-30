@@ -11,6 +11,12 @@ from councilmatic_core.views import *
 
 from haystack.query import SearchQuerySet
 
+class PittsburghIndexView(IndexView):
+    template_name = 'pittsburgh/index.html'
+
+# class PittsburghAboutView(AboutView):
+#     template_name = 'pittsburgh/about.html'
+
 class PittsburghCouncilmaticFacetedSearchView(CouncilmaticFacetedSearchView):
 
     def build_form(self, form_kwargs=None):
