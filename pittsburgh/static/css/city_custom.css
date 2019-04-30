@@ -1,14 +1,13 @@
 /* city-specific css lives here */
 /* anything in this file will override custom.css in django-councilmatic */
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .navbar {
-    font-family: 'Merriweather', serif, 'Source Sans Pro', sans-serif;
-    /*font-family: 'ff-din-web', Arial, sans-serif;*/
+    /*font-family: 'Merriweather', serif, 'Source Sans Pro', sans-serif;*/
+    font-family: 'ff-din-web', Arial, sans-serif;
     background-color: #fdb81e;
 }
 
 a {
     color: #212121;
-    text-decoration: underline;
 }
 
 h1, .h1 {
