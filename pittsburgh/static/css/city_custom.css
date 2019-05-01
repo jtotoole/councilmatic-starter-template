@@ -38,13 +38,22 @@ h1, .h1 {
     background-color: #212121;
 }
 
-.nav>li>a {
+.nav li a {
   padding: 19.5px 10px;
-  color: #fdb81e;
 }
 
-#nav-items {
+#nav-items li a {
     color: #fdb81e;
+
+}
+
+#nav-items li a:hover {
+    color: #212121;
+    background-color: #fdb81e;
+}
+
+.navbar-brand a:hover {
+    background-color: #fdb81e;
 }
 
 .site-intro-search { margin-bottom: 1em; }
@@ -75,6 +84,18 @@ h1, .h1 {
 #map { margin-bottom: 2em; }
 
 #map-screenshot { width: 90%; }
+
+.btn {
+    color: #fdb81e;
+    background-color: #212121;
+    border-color: #212121;
+}
+
+.btn:hover {
+    color: #212121;
+    background-color: #fdb81e;
+    border-color: #212121;
+}
 
 .map-heading {
     display: inline-block;
@@ -260,6 +281,23 @@ div#toggleControls { margin-bottom: 1em; }
     list-style-type: none;
 }
 
+.footer {
+    background-color: #212121;
+    color: #fdb81e;
+}
+
+.footer a {
+    text-decoration: underline;
+    color: #fdb81e;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.footer h4 {
+    color: #fdb81e;
+}
 
 /* Media queries */
 @media only screen and (max-width : 767px) {
