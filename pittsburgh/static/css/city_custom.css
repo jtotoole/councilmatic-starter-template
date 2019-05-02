@@ -9,6 +9,10 @@ a {
     color: #212121;
 }
 
+a:hover {
+    color: #fdb81e;
+}
+
 h1, .h1 {
     font-size: 36px;
     color: #fdb81e;
@@ -30,7 +34,11 @@ h1, .h1 {
 }
 
 .navbar-brand {
-    min-width: 160px;
+    min-width: 60px;
+}
+
+.navbar-brand a:hover {
+    background-color: #fdb81e;
 }
 
 .navbar {
@@ -64,7 +72,7 @@ h1, .h1 {
           rgba(0, 0, 0, 0.8),
           rgba(160, 160, 160, 0.1)
         ),
-        url('http://pittsburghpa.gov/images/home-slider/8.jpg');
+        url('/static/images/cityscape.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -321,6 +329,14 @@ div#toggleControls { margin-bottom: 1em; }
 
     .current-meeting-img {
         max-width: 75%;
+    }
+
+    h1 {
+        padding-top: 50px;
+    }
+
+    #nav-items li a {
+        padding-top: 20px;
     }
 }
 
