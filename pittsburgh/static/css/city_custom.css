@@ -37,10 +37,6 @@ h1, .h1 {
     min-width: 60px;
 }
 
-.navbar-brand a:hover {
-    background-color: #fdb81e;
-}
-
 .navbar {
     font-size: 16px;
     background-color: #212121;
@@ -305,6 +301,14 @@ div#toggleControls { margin-bottom: 1em; }
 
 .footer h4 {
     color: #fdb81e;
+}
+
+#logo {
+    height: 45px;
+    float: left;
+    position: relative;
+    bottom: -10px;
+    top: 5px;
 }
 
 /* Media queries */

@@ -27,9 +27,7 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid container-fluid-nav">
             <div id="nav-title">
-                <a class="navbar-brand" href="http://www.pittsburghpa.gov">
                     <img id="logo" src="/static/images/pittsburgh_crest.png"></img>
-                </a>
             </div>
             <ul id="nav-items">
                 <li>
@@ -46,6 +44,12 @@
                 </li>
                 <li>
                     <a href="{% url 'search' %}">Legislation</a>
+                </li>
+                <li>
+                    <a href='/login'>Sign In</a>
+                </li>
+                <li>
+                    <div id="google_translate_element"></div>
                 </li>
 
                 {# {% nocache %} #}
@@ -187,6 +191,15 @@
           $('[data-toggle="tooltip"]').tooltip()
         });
     </script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', gaTrack: false},
+                'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 </html>
