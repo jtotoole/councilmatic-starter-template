@@ -38,17 +38,26 @@ h1, .h1 {
     background-color: #212121;
 }
 
-.navbar-brand {
-    min-width: 60px;
-}
-
-.real-shit a:hover {
-    color: #212121;
-    background-color: #fdb81e;
-}
-
-#logo-text {
+.nav-brand {
+    float: left;
+    padding: 19.5px 15px;
+    font-size: inherit;
+    font-weight: 700;
+    text-transform: 700;
+    line-height: 21px;
+    height: 60px;
     color: #fdb81e;
+    background-color: #212121;
+}
+
+.nav-brand>img {
+    display: block
+}
+
+.nav-brand:hover {
+    color: #212121;
+    text-decoration: none;
+    background-color: #fdb81e;
 }
 
 .nav li a {
@@ -384,4 +393,9 @@ div#toggleControls { margin-bottom: 1em; }
     .navbar-header {
         float:none;
     }
+
+    .navbar>.container .navbar-brand,.navbar>.container-fluid .nav-brand {
+        margin-left:-15px
+    }
+}
 }
