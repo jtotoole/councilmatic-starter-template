@@ -73,11 +73,14 @@
 
                     <div class= 'col-sm-4 desktop-only'>
                         <p class='text-center'>
-                            <a href='/council-members/' target="_blank"><img id="map-screenshot" src='/static/images/pittsburgh_ward_map.png' class='img-responsive img-rounded' title='City of Pittsburgh Wards' alt="Pittsburgh's 32 Wards" /></a>
+                            <img id="map-screenshot" src='/static/images/pittsburgh_ward_map.png' class='img-responsive img-rounded' title='City of Pittsburgh Council Districts' alt="Pittsburgh's nine council districts" />
                             <em>Pittsburgh's nine council districts</em>
                         </p>
+                        <div id="map-modal" class="modal">
+                            <span class="map-close">&times;</span>
+                            <img id="map-modal-image" class="modal-content">
+                        </div>
                     </div>
-                </div>
 
                 <div class="divider"></div>
 
@@ -144,5 +147,19 @@
           "query-input": "required name=search_term_string"
           }
       }
+    </script>
+
+    {# map modal trigger #}
+
+    <script>
+    $('#map-screenshot').click(function(){
+        $('#map-modal').style.display = "block";
+        $('#map-modal-image').src = this.src;
+    });
+
+    $('.map-close').click(function(){
+        $('#map-modal').display = "none";
+    });
+
     </script>
 {% endblock %}
