@@ -14,8 +14,11 @@ from haystack.query import SearchQuerySet
 class PittsburghIndexView(IndexView):
     template_name = 'pittsburgh/index.html'
 
-# class PittsburghAboutView(AboutView):
-#     template_name = 'pittsburgh/about.html'
+class PittsburghEventsView(EventsView):
+    template_name = 'pittsburgh/events.html'
+
+class PittsburghCouncilMembersView(CouncilMembersView):
+    template_name = 'pittsburgh/council-members.html'
 
 class PittsburghCouncilmaticFacetedSearchView(CouncilmaticFacetedSearchView):
 

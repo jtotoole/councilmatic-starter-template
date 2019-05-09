@@ -6,7 +6,7 @@ import pytz
 
 app_timezone = pytz.timezone(settings.TIME_ZONE)
 
-class CityBill(Bill):
-     
+class PittsburghBill(Bill):
+
     class Meta:
         proxy = True

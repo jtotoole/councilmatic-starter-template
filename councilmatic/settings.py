@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Edit this and add your domain when deploying.
 ALLOWED_HOSTS = [
-    'localhost', '127.0.0.1', 'example.com'
+    'localhost', '127.0.0.1', 'pittsburghpa.gov'
 ]
 
 
@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_rq',
     'haystack',
     'pittsburgh',
     'councilmatic_core',
@@ -83,6 +84,33 @@ TEMPLATES = [
     },
 ]
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'pitt_councilmatic_sample',
+        'USER': '',
+        'PASSWORD': '',
+        'PORT': 5432,
+    }
+}
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.solr_backend.SolrEngine',
+        'URL': 'http://127.0.0.1:8983/solr',
+    },
+}
+
+RQ_QUEUES = {
+    'default': {
+        'HOST': 'localhost',
+        'PORT': 6379,
+        'DB': 1,
+        'PASSWORD': '',
+        'DEFAULT_TIMEOUT': 360,
+    }
+}
+
 WSGI_APPLICATION = 'councilmatic.wsgi.application'
 
 OCD_CITY_COUNCIL_NAME = 'Pittsburgh City Council'
@@ -101,6 +129,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+USING_NOTIFICATIONS
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
@@ -113,6 +143,8 @@ STATIC_FILE_DIRS = (
 
 
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
+
+ADV_CACHE_INCLUDE_PK = True
 
 DEBUG = True
 

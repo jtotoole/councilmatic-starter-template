@@ -302,5 +302,4 @@ EXTRA_TITLES = {
     'peduto-bill': 'Mayor',
 }
 
-USING_NOTIFICATIONS = False
-
+USING_NOTIFICATIONS = True

@@ -27,11 +27,8 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^search/', PittsburghCouncilmaticFacetedSearchView(searchqueryset=EmptySearchQuerySet,
                                        form_class=CouncilmaticSearchForm), name='search'),
-    # url(r'^search/', CouncilmaticFacetedSearchView(searchqueryset=sqs,
-    #                                    form_class=CouncilmaticSearchForm)),
     url(r'^$', PittsburghIndexView.as_view(), name='index'),
     url(r'', include('councilmatic_core.urls')),
-    # url(r'^about/$', PittsburghAboutView.as_view(), name='about')
 ]
 
 urlpatterns += staticfiles_urlpatterns()

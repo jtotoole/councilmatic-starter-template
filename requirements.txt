@@ -1,6 +1,8 @@
 psycopg2==2.7.6.1
 django-councilmatic==0.10.13
 django-councilmatic-notifications
+rq
+django-rq
 raven==5.30.0
 google-api-python-client==1.6.4
 icalendar==4.0.0
