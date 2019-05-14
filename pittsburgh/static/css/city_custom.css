@@ -384,8 +384,25 @@ div#toggleControls { margin-bottom: 1em; }
     padding-right: 10px;
 }
 
+
+.navbar-toggle { margin-right: 0; }
+
+.navbar-default .navbar-toggle .icon-bar {
+    border-radius: 0;
+    margin-bottom: 5px;
+    width: 20px;
+}
+
 /* Media queries */
 @media only screen and (max-width : 767px) {
+
+    body {
+      padding-top: 40px;
+    }
+
+    #section-photo h2 {
+      font-size: 28px;
+    }
 
     .navbar-brand {
         width: 50%;
