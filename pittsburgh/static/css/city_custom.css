@@ -127,7 +127,6 @@ h1, .h1 {
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
   animation-name: zoom;
   animation-duration: 0.6s;
 }
@@ -137,20 +136,21 @@ h1, .h1 {
   to {transform:scale(1)}
 }
 
-/* The Close Button */
+/* map modal close button */
 .close {
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #f1f1f1;
+  color: #fff;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
+  opacity: 1;
 }
 
 .close:hover,
 .close:focus {
-  color: #bbb;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
 }
@@ -390,6 +390,10 @@ div#toggleControls { margin-bottom: 1em; }
     .navbar-brand {
         width: 50%;
         padding-top: 19px;
+    }
+
+    .social-buttons {
+      display: none;
     }
 
     .home-header {
