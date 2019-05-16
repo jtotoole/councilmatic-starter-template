@@ -393,6 +393,43 @@ div#toggleControls { margin-bottom: 1em; }
     width: 20px;
 }
 
+.pittsburgh-button {
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #212121;
+    border: 0;
+    border-radius: 0.3rem;
+    color: #fdb81e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.9rem;
+    line-height: 1;
+    outline: none;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    font-weight: 999;
+    -webkit-font-smoothing: antialiased;
+}
+
+.pittsburgh-button:hover {
+  background-color: #fdb81e;
+  color: #212121;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+img.github-icon {
+    width: 2.2rem !important;
+    vertical-align: text-bottom !important;
+}
+
 /* Media queries */
 @media only screen and (max-width : 767px) {
 
@@ -437,6 +474,8 @@ div#toggleControls { margin-bottom: 1em; }
         padding-top: 20px;
     }
 }
+
+
 
 @media only screen and (max-width : 415px) {
     .remove-order-value {
